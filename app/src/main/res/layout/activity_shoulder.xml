@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shoulder">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="7dp"
+        android:src="@drawable/arms2" />
+
+    <TextView
+        android:id="@+id/tv_count1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="0/0" />
+
+    <ProgressBar
+        android:id="@+id/pb1_h"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_prev1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" PREVIOUS"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:id="@+id/bt_next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_disc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/arms_disc"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        />
+
+
+</LinearLayout>
